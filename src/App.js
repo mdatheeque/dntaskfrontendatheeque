@@ -47,7 +47,6 @@ function App() {
   //// Get all functions
   const getDisplayVals = () => {
     getalllogs().then((result) => {
-      console.log(result.logs);
       const totalCount = result.logs.length;
       const addCount = result.logs.filter(
         (eachRes) => eachRes.datatype === "add"
@@ -76,7 +75,6 @@ function App() {
   };
 
   const handleEditChange = (name) => (event) => {
-    console.log(event.target.value);
     setEditedVals({ ...editedVals, [name]: event.target.value });
   };
 

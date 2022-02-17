@@ -9,7 +9,6 @@ const EditData = ({
   submitEditChange,
   editVals,
 }) => {
-  console.log(allEditData);
   return (
     <div className="editData-container">
       <h4 style={{ textAlign: "center" }}>Edit data</h4>
