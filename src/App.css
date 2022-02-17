@@ -1,0 +1,55 @@
+/* global styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10px;
+}
+
+
+/* app body */
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* first flex row - display counts and add a data */
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  background-color: #FBFCD4;
+}
+
+.displayData {
+  width: 20%;
+  background-color: #151515;
+  color: #FBC403;
+  padding: 20px;
+}
+
+.addData{
+  width: 80%;
+  padding: 20px;
+}
+
+
+/* media queries for all containers */
+
+@media only screen and (max-width: 800px) {
+  .firstRow {
+    flex-direction: column;
+  }
+  .displayData {
+    width: 100%;
+  }
+  .addData{
+    width: 100%;
+  }
+}

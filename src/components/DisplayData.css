@@ -1,0 +1,29 @@
+.display-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.display-item-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.display-item{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .display-container{
+        align-items: center;
+    }
+
+    .display-item h1 p{
+        text-align: center;
+    }
+    
+    .display-item-container {
+      flex-direction: row;
+    }
+  }
